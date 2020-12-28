@@ -1,4 +1,4 @@
-setwd('C:/Users/Susheela/Documents/data analysis/assignment 1') # set the path to file location 
+setwd('C:/Users/Susheela/Desktop/GITHUB/Data-Analysis/assignment 1') # set the path to file location 
 getwd()
 
 df<-read.csv("car_r.csv",header=TRUE)                     # reads the file into dataframe 'df' 
@@ -59,7 +59,6 @@ relativespeed<-list()
 for(i in 1:nrow(df)){
   relativespeed[i]<-df[i,5]+df[i,6]
 }
-
 print("Average relative speed:")
 mean(as.numeric(relativespeed))
 
